@@ -1244,7 +1244,7 @@ static struct kgsl_device_platform_data kgsl_2d0_pdata = {
 	/* HW workaround, run Z180 SYNC @ 192 MHZ */
 	.set_grp_async = NULL,
 	.idle_timeout = HZ/10,
-	.nap_allowed = true,
+	.nap_allowed = false,
 	.clk_map = KGSL_CLK_CORE | KGSL_CLK_IFACE,
 };
 
